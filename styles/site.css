@@ -35,7 +35,7 @@
 
 #cardContainer div{
     border: 2px solid black;
-    width: 25%;
+    width: 30%;
 }
 
 body{
@@ -75,7 +75,8 @@ h3{
     font-family:'Times New Roman', Times, serif;
     font-weight:bold;
     text-align: center;
-    max-width: 90%;
+    font-size: 20px;
+
 }
 img{
     display: block;
@@ -91,7 +92,10 @@ button{
     border: 0px;
 }
 button:hover{
+    font-family:'Times New Roman', Times, serif;
     font-style: italic;
+    font-weight: bold;
+    text-transform: lowercase;
 }
 button img{
     width: 100%;
