@@ -30,7 +30,7 @@
 #cardContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #cardContainer div{
@@ -75,8 +75,7 @@ h3{
     font-family:'Times New Roman', Times, serif;
     font-weight:bold;
     text-align: center;
-    font-size: 5%;
-    white-space: nowrap;
+    max-width: 90%;
 }
 img{
     display: block;
