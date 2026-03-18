@@ -26,7 +26,7 @@
         </section>
 
         <section id="shuffling" class="hidden">
-            <img id = "shufflingAnimation" src="images/shuffling.gif">
+            <img id="shufflingAnimation" src="images/shuffling.gif">
             <button id="stopShuffle">STOP</button>
             <!-- when this button is clicked, it will take the viewer to the next page, which explains the reading -->
         </section>
@@ -82,30 +82,35 @@
             <div id="cardContainer">
                 <div>
                     <h2>PAST</h2>
-                    <h3 id = "pastHead">PAST</h3>
+                    <h3 id="pastHead">PAST</h3>
                     <video id="pastRecap" controls>
-                        <source id = "pastRecapVideo" src="" type="video/mp4">
+                        <source id="pastRecapVideo" src="" type="video/mp4">
                     </video>
                     <!-- the corresponding video w/ controls -->
-                     <p id = "pastTraits"></p>
+                    <p id="pastTraits"></p>
+                    <p id="pastType"></p>
                 </div>
 
                 <div>
                     <h2>PRESENT</h2>
-                    <h3 id = "presentHead">PRESENT</h3>
+                    <h3 id="presentHead">PRESENT</h3>
                     <video id="presentRecap" controls>
-                        <source id = "presentRecapVideo" src="" type="video/mp4">
-                    </video>                    <!-- the corresponding video w/ controls -->
-                    <p id = "presentTraits"></p>
+                        <source id="presentRecapVideo" src="" type="video/mp4">
+                    </video> <!-- the corresponding video w/ controls -->
+                    <p id="presentTraits"></p>
+                    <p id="presentType"></p>
+
                 </div>
 
                 <div>
                     <h2>FUTURE</h2>
-                    <h3 id = "futureHead">FUTURE</h3>
-                    <video  id="futureRecap" controls>
-                        <source id = "futureRecapVideo" src="" type="video/mp4">
-                    </video>                    <!-- the corresponding video w/ controls -->
-                    <p id = "futureTraits"></p>
+                    <h3 id="futureHead">FUTURE</h3>
+                    <video id="futureRecap" controls>
+                        <source id="futureRecapVideo" src="" type="video/mp4">
+                    </video> <!-- the corresponding video w/ controls -->
+                    <p id="futureTraits"></p>
+                    <p id="futureType"></p>
+
                 </div>
             </div>
             <button id="backToStart">back to start</button>

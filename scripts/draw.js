@@ -1,16 +1,16 @@
-//const cardName = {name:"", src:"", traits:"", place:""}
+//const cardName = {name:"", src:"", traits:"", type:""}
 
-const rabbit = {card:"I. THE RABBIT", src:"images/I_RABBIT.mp4", traits:"quickness, smallness, agility", place:"prey"};
-const deer = {card:"II. THE DEER", src:"images/II_DEER.mp4",  traits:"beauty, innocence, fear", place:"prey"};
-const lamb = {card:"III. THE LAMB", src:"images/III_LAMB.mp4",  traits:"docility, inevitability, affection", place:"prey"};
-const rat = {card:"IV. THE RAT", src:"images/IV_RAT.mp4",  traits:"shame, secrecy, illness", place:"prey"};
-const fly = {card:"V. THE FLY", src:"images/V_FLY.mp4",  traits:"scavenging, decay, finality", place:"prey"};
+const rabbit = {card:"I. THE RABBIT", src:"images/I_RABBIT.mp4", traits:"quickness, smallness, agility", type:"prey"};
+const deer = {card:"II. THE DEER", src:"images/II_DEER.mp4",  traits:"beauty, innocence, fear", type:"prey"};
+const lamb = {card:"III. THE LAMB", src:"images/III_LAMB.mp4",  traits:"docility, inevitability, affection", type:"prey"};
+const rat = {card:"IV. THE RAT", src:"images/IV_RAT.mp4",  traits:"shame, secrecy, illness", type:"prey"};
+const fly = {card:"V. THE FLY", src:"images/V_FLY.mp4",  traits:"scavenging, decay, finality", type:"prey"};
 
-const cat = {card:"VI. THE CAT", src:"images/VI_CAT.mp4",  traits:"domesticity, instinct, insignificance", place:"predator"};
-const snake = {card:"VII. THE SNAKE", src:"images/VII_SNAKE.mp4",  traits:"duality, deception, venom", place:"predator"};
-const spider = {card:"VIII. THE SPIDER", src:"images/VIII_SPIDER.mp4",  traits:"patience, trickery, artistry", place:"predator"};
-const wolf = {card:"IX. THE WOLF", src:"images/IX_WOLF.mp4",  traits:"kinship, terror, the night", place:"predator"};
-const lion = {card:"X. THE LION", src:"images/X_LION.mp4",  traits:"pride, grandeur, leadership", place:"predator"};
+const cat = {card:"VI. THE CAT", src:"images/VI_CAT.mp4",  traits:"domesticity, instinct, insignificance", type:"predator"};
+const snake = {card:"VII. THE SNAKE", src:"images/VII_SNAKE.mp4",  traits:"duality, deception, venom", type:"predator"};
+const spider = {card:"VIII. THE SPIDER", src:"images/VIII_SPIDER.mp4",  traits:"patience, trickery, artistry", type:"predator"};
+const wolf = {card:"IX. THE WOLF", src:"images/IX_WOLF.mp4",  traits:"kinship, terror, the night", type:"predator"};
+const lion = {card:"X. THE LION", src:"images/X_LION.mp4",  traits:"pride, grandeur, leadership", type:"predator"};
 
 const cardsList = [rabbit,deer,lamb,rat,fly,cat,spider,snake,wolf,lion];
 let myArray = [];
@@ -63,6 +63,10 @@ pastTraits = document.getElementById('pastTraits');
 presentTraits = document.getElementById('presentTraits');
 futureTraits = document.getElementById('futureTraits');
 
+pastType = document.getElementById('pastType');
+presentType = document.getElementById('presentType');
+futureType = document.getElementById('futureType');
+
 pastRecap = document.getElementById('pastRecap');
 presentRecap = document.getElementById('presentRecap');
 futureRecap = document.getElementById('futureRecap');
@@ -74,6 +78,10 @@ futureHead.textContent = cardsArray[2].card;
 pastTraits.textContent = cardsArray[0].traits;
 presentTraits.textContent = cardsArray[1].traits;
 futureTraits.textContent = cardsArray[2].traits;
+
+pastType.textContent = cardsArray[0].type;
+presentType.textContent = cardsArray[1].type;
+futureType.textContent = cardsArray[2].type;
 
 $("#pastRecapVideo").attr("src", pastSrc);
 $("#presentRecapVideo").attr("src", presentSrc);
