@@ -66,7 +66,8 @@ section{
 h1{
     font-family:'Times New Roman', Times, serif;
     font-weight:bold;
-    font-size: 100pt;
+    /* font-size: 100pt; */
+    font-size: 20vh;
     margin:0;
 }
 h2{
@@ -107,7 +108,8 @@ button img{
 }
 
 #recap video{
-    width: 40%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #shuffleButton{
@@ -120,9 +122,9 @@ button img{
 }
 
 #recap, #start {
-    height: 70vh;
+    height: 70%;
 }
 
 #pastType, #presentType, #futureType {
-    margin-top: auto;
+    margin-top: 10%;
 }
