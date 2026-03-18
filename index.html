@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>the primal deck</title>
+    <link rel="stylesheet" href="styles/site.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            the primal deck
+        </h1>
+    </header>
+    <main>
+        <section id="start">
+            <button id="shuffleButton">
+                <img src="images/cardDesign.png">
+            </button>
+            <!-- when this button is clicked, it will take the viewer to the next page, where the shuffle animation loops -->
+        </section>
+
+        <section id="shuffling" class="hidden">
+            <img id = "shufflingAnimation" src="images/shuffling.gif">
+            <button id="stopShuffle">STOP</button>
+            <!-- when this button is clicked, it will take the viewer to the next page, which explains the reading -->
+        </section>
+
+        <section id="beginReading" class="hidden">
+            <button id="begin">BEGIN?</button>
+            <!-- when this button is clicked, it takes the viewer to the next section -->
+        </section>
+
+        <section id="past" class="hidden title">
+            <h2>I. THE PAST</h2>
+            <button id="goToPastCard"> → </button>
+        </section>
+
+        <section id="pastCard" class="hidden">
+            <!-- <h3 id="pastCardName">PAST</h3> -->
+            <!-- card name -->
+            <video id="pastVideo" class="card">
+                <source id="pastSource" src="images/II_DEER.mp4" type="video/mp4">
+            </video>
+            <!-- video for past card -->
+        </section>
+
+        <section id="present" class="hidden title">
+            <h2>II. THE PRESENT</h2>
+            <button id="goToPresentCard"> → </button>
+        </section>
+
+        <section id="presentCard" class="hidden">
+            <!-- <h3 id="presentCardName">PRESENT</h3> -->
+            <!-- card name -->
+            <video id="presentVideo" class="card">
+                <source id="presentSource" src="images/III_LAMB.mp4" type="video/mp4">
+            </video>
+            <!-- video for present card -->
+        </section>
+
+        <section id="future" class="hidden title">
+            <h2>III. THE FUTURE</h2>
+            <button id="goToFutureCard"> → </button>
+        </section>
+
+        <section id="futureCard" class="hidden">
+            <!-- <h3 id="futureCardName">FUTURE</h3> -->
+            <!-- card name -->
+            <video id="futureVideo" class="card">
+                <source id="futureSource" src="images/I_RABBIT.mp4" type="video/mp4">
+            </video>
+            <!-- video for present card -->
+        </section>
+
+        <section id="recap" class="hidden">
+            <div id="cardContainer">
+                <div>
+                    <h2>PAST</h2>
+                    <h3 id = "pastHead">PAST</h3>
+                    <video id="pastRecap" controls>
+                        <source id = "pastRecapVideo" src="" type="video/mp4">
+                    </video>
+                    <!-- the corresponding video w/ controls -->
+                     <p id = "pastTraits"></p>
+                </div>
+
+                <div>
+                    <h2>PRESENT</h2>
+                    <h3 id = "presentHead">PRESENT</h3>
+                    <video id="presentRecap" controls>
+                        <source id = "presentRecapVideo" src="" type="video/mp4">
+                    </video>                    <!-- the corresponding video w/ controls -->
+                    <p id = "presentTraits"></p>
+                </div>
+
+                <div>
+                    <h2>FUTURE</h2>
+                    <h3 id = "futureHead">FUTURE</h3>
+                    <video  id="futureRecap" controls>
+                        <source id = "futureRecapVideo" src="" type="video/mp4">
+                    </video>                    <!-- the corresponding video w/ controls -->
+                    <p id = "futureTraits"></p>
+                </div>
+            </div>
+            <button id="backToStart">back to start</button>
+        </section>
+
+
+
+    </main>
+
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/draw.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+</body>
+
+</html>
